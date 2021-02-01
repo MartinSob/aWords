@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46F33022-0E7F-463E-BB0D-10697306D7F2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BusinessEntity</RootNamespace>
+    <AssemblyName>BusinessEntity</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ObjetivoNoCumplido.cs" />
+    <Compile Include="Permiso.cs" />
+    <Compile Include="iUpdatable.cs" />
+    <Compile Include="Emblema.cs" />
+    <Compile Include="Patente.cs" />
+    <Compile Include="Sector.cs" />
+    <Compile Include="Puesto.cs" />
+    <Compile Include="UsuarioPropuesto.cs" />
+    <Compile Include="UsuarioSecurity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Familia.cs" />
+    <Compile Include="Sesion.cs" />
+    <Compile Include="Idioma.cs" />
+    <Compile Include="BitacoraMensaje.cs" />
+    <Compile Include="UsuarioBusiness.cs" />
+    <Compile Include="Objetivo.cs" />
+    <Compile Include="Reconocimiento.cs" />
+    <Compile Include="Notificacion.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,341 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18B83878-E427-4117-8D6B-51371806D0C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>aw.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.8.46, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.5.8.2\lib\net46\Spire.License.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=6.8.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.5.8.2\lib\net46\Spire.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Asp, Version=5.8.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.5.8.2\lib\net46\Spire.PdfViewer.Asp.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=5.8.2.0, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Spire.PDFViewer.5.8.2\lib\net46\Spire.PdfViewer.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AgregarFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarFamilia.Designer.cs">
+      <DependentUpon>AgregarFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarObjetivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarObjetivo.Designer.cs">
+      <DependentUpon>AgregarObjetivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ayuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ayuda.Designer.cs">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BitacoreTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BitacoreTable.Designer.cs">
+      <DependentUpon>BitacoreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboboxItem.cs" />
+    <Compile Include="DetalleObjetivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetalleObjetivo.Designer.cs">
+      <DependentUpon>DetalleObjetivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ErrorDV.Designer.cs">
+      <DependentUpon>ErrorDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarEmblema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarEmblema.Designer.cs">
+      <DependentUpon>GestionarEmblema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarFamilia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarFamilia.Designer.cs">
+      <DependentUpon>GestionarFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarIdioma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarIdioma.Designer.cs">
+      <DependentUpon>GestionarIdioma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarReconocimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarReconocimiento.Designer.cs">
+      <DependentUpon>GestionarReconocimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarSector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarSector.Designer.cs">
+      <DependentUpon>GestionarSector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarPuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarPuesto.Designer.cs">
+      <DependentUpon>GestionarPuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionarSectorLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionarSectorLista.Designer.cs">
+      <DependentUpon>GestionarSectorLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Notificaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Notificaciones.Designer.cs">
+      <DependentUpon>Notificaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProponerEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProponerEmpleado.Designer.cs">
+      <DependentUpon>ProponerEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RealizarBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RealizarBackup.Designer.cs">
+      <DependentUpon>RealizarBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarExperience.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarExperience.Designer.cs">
+      <DependentUpon>AgregarExperience.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectorAdminDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SectorAdminDetalle.Designer.cs">
+      <DependentUpon>SectorAdminDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirJefe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ElegirJefe.Designer.cs">
+      <DependentUpon>ElegirJefe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdatableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Perfil.Designer.cs">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AgregarFamilia.resx">
+      <DependentUpon>AgregarFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarObjetivo.resx">
+      <DependentUpon>AgregarObjetivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ayuda.resx">
+      <DependentUpon>Ayuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BitacoreTable.resx">
+      <DependentUpon>BitacoreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetalleObjetivo.resx">
+      <DependentUpon>DetalleObjetivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ErrorDV.resx">
+      <DependentUpon>ErrorDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarEmblema.resx">
+      <DependentUpon>GestionarEmblema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarFamilia.resx">
+      <DependentUpon>GestionarFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarIdioma.resx">
+      <DependentUpon>GestionarIdioma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarReconocimiento.resx">
+      <DependentUpon>GestionarReconocimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarSector.resx">
+      <DependentUpon>GestionarSector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarPuesto.resx">
+      <DependentUpon>GestionarPuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionarSectorLista.resx">
+      <DependentUpon>GestionarSectorLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Notificaciones.resx">
+      <DependentUpon>Notificaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProponerEmpleado.resx">
+      <DependentUpon>ProponerEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RealizarBackup.resx">
+      <DependentUpon>RealizarBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarExperience.resx">
+      <DependentUpon>AgregarExperience.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SectorAdminDetalle.resx">
+      <DependentUpon>SectorAdminDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ElegirJefe.resx">
+      <DependentUpon>ElegirJefe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdatableForm.resx">
+      <DependentUpon>UpdatableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Perfil.resx">
+      <DependentUpon>Perfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="ManualDeUsuario.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessEntity\BusinessEntity.csproj">
+      <Project>{46f33022-0e7f-463e-bb0d-10697306d7f2}</Project>
+      <Name>BusinessEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{3f6159b9-73e8-4aeb-8ab8-de5828e0f091}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.csproj">
+      <Project>{86ed410b-00e6-4f2a-8b3d-5944d6eb7c88}</Project>
+      <Name>Security</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aw.ico" />
+    <Content Include="script.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
