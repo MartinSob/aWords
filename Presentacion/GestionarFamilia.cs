@@ -36,10 +36,7 @@ namespace Presentacion {
             if (cmbFamilias.SelectedValue == null) {
                 return;
             }
-			var asd = cmbFamilias.SelectedValue.ToString();
-			var asss = PermisosManager.obtenerFamilia(int.Parse(cmbFamilias.SelectedValue.ToString()));
-
-
+			
 			AgregarFamilia ag = new AgregarFamilia() {
 				family = PermisosManager.obtenerFamilia(int.Parse(cmbFamilias.SelectedValue.ToString()))
 			};
