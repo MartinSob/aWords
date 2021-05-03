@@ -1,4 +1,6 @@
 # aWords
+Proyecto para las materias 'Trabajo de Campo' y 'Trabajo de Diploma' de la carrera de Ing. en Sistemas Informaticos. Es una aplicación para crear equipos laborales basandose en las necesidades del mismo y los empleados disponibles, contemplando las tecnologias, reconocimientos y objetivos.
+
 ## Codigo
 Buildear antes de ejecutar el proyecto.
 
@@ -10,7 +12,7 @@ Versiones de SSMS 17 y 18. Scripts generados para version 2017, compatibles con 
 
 Ubicacion del script: `aWords\DB Scripts\script.sql`
 
-
+sdsdsdsdsdsd
 ## Documentacion
 En el archivo `TP Final.zip` se encuentra una copia de la ultima version del documento WORD y los archivos de diagramas.
 
