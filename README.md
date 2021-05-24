@@ -12,7 +12,7 @@ Versiones de SSMS 17 y 18. Scripts generados para version 2017, compatibles con 
 
 Ubicacion del script: `aWords\DB Scripts\script.sql`
 
-sdsdsdsdsdsd
+
 ## Documentacion
 En el archivo `TP Final.zip` se encuentra una copia de la ultima version del documento WORD y los archivos de diagramas.
 
