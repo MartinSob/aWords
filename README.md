@@ -1,5 +1,5 @@
 # aWords
-Proyecto para las materias 'Trabajo de Campo' y 'Trabajo de Diploma' de la carrera de Ing. en Sistemas Informaticos. Es una aplicación para crear equipos laborales basandose en las necesidades del mismo y los empleados disponibles, contemplando las tecnologias, reconocimientos y objetivos.
+Proyecto para las materias 'Trabajo de Campo' y 'Trabajo de Diploma' de la carrera de Ing. en Sistemas Informaticos en la UAI. Es una aplicación para crear equipos laborales basandose en las necesidades del mismo y los empleados disponibles, contemplando las tecnologias, reconocimientos y objetivos.
 
 ## Codigo
 Buildear antes de ejecutar el proyecto.
